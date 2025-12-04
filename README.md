@@ -3,7 +3,8 @@ A toy implementation of Monte Carlo simulations to compute the probabilties in a
 
 ## Features:
 - Custom Xorshift based Random Number Generator class (no `<random>` dependency).
-- Simulates 1 Billion (1,000,000,000) coin tosses to compute the probability of getting heads
+- Simulates 1 Billion (1,000,000,000) coin tosses to compute the probability of getting heads.
+- Uses the PID of the program to seed the random number generator, allowing for a more realistic simulation.
 
 ## Project Structure:
 ```
