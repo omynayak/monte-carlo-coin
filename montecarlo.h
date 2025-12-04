@@ -15,7 +15,7 @@ class Xorshift32{
 			x ^= x >> 17;
 			x ^= x << 5;
 			state = x;
-			return x;
+			return x * 0x9E3779BB;
 		}
 
 		double nextDouble(){
