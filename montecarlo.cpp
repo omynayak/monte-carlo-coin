@@ -5,7 +5,7 @@ static inline int coinToss(Xorshift32 &coin){
 }
 
 double montecarlo(){
-	Xorshift32 coin(23);
+	Xorshift32 coin(getpid());
 	uint32_t n = 1000000000;
 
 	uint32_t headCount = 0;

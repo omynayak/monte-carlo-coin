@@ -2,6 +2,8 @@
 #define MONTECARLO
 
 #include <cstdint>
+#include <unistd.h>
+#include <sys/types.h>
 
 class Xorshift32{
 	public:
@@ -16,10 +18,6 @@ class Xorshift32{
 			x ^= x << 5;
 			state = x;
 			return x * 0x9E3779BB;
-		}
-
-		double nextDouble(){
-			return (next() / 4294967296.0);
 		}
 };
 
